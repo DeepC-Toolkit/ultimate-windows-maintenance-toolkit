@@ -1,0 +1,53 @@
+ULTIMATE WINDOWS MAINTENANCE TOOLKIT
+DC PROPRIETARY SOFTWARE LICENSE
+Version 1.0 — 28 September 2026
+
+Copyright (c) 2026 DC. All rights reserved.
+
+This license applies to the original Toolkit application, interface, artwork,
+documentation, and release packaging supplied by DC. It does not replace or
+limit the separate licenses for third-party components listed in
+THIRD_PARTY_NOTICES.txt.
+
+1. Permission to use
+
+DC grants each recipient a free, personal, non-exclusive license to download,
+install, and run an unmodified official release of the Toolkit for personal,
+non-commercial use. You may keep one backup copy for your own use. To give the
+Toolkit to another person, share the official GitHub release link so they can
+obtain their own copy under this license.
+
+2. Restrictions
+
+Except where applicable law or a third-party component license permits it,
+you may not sell, sublicense, publish a mirror of, repackage, modify, or
+redistribute the Toolkit binary; remove its copyright or attribution notices;
+or claim the Toolkit or its original materials as your own. No source-code
+license is granted. DC retains all rights to the original Toolkit materials
+and the DC mark.
+
+3. Third-party components
+
+Some components are provided under open-source licenses. Those components
+remain governed by their own licenses, which are included or identified in
+THIRD_PARTY_NOTICES.txt and the third_party_licenses folder. If this license
+conflicts with a component's license, that component's license controls for
+that component.
+
+4. No warranty
+
+The Toolkit is provided "as is" to the maximum extent permitted by law. DC
+makes no promise that every maintenance action will be suitable for every
+computer or will produce a particular result. Review each action, keep
+independent backups of important files, and use Windows repair or cleanup
+features only when you understand the action being requested.
+
+5. Termination
+
+This permission ends if you materially breach this license. When it ends, stop
+using the Toolkit and delete copies you control, except where applicable law
+or a third-party license requires otherwise.
+
+This license does not create an activation service, subscription, or transfer
+of ownership. Questions about the Toolkit license may be directed to the
+project maintainer through the official project page.
