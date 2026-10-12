@@ -2,13 +2,13 @@
 
 View your system resources, manage startup apps, and run maintenance tasks from one easy-to-use interface.
 
-**By DC · Version 3.3.3.1**
+**By DC · Version 3.3.3.2**
 
-## ⬇ [Download Setup EXE](https://github.com/DeepC-Toolkit/ultimate-windows-maintenance-toolkit/releases/download/v3.3.3.1/UltimateWindowsMaintenanceToolkit-3.3.3.1-Setup.exe)
+## ⬇ [Download Setup EXE](https://github.com/DeepC-Toolkit/ultimate-windows-maintenance-toolkit/releases/download/v3.3.3.2/UltimateWindowsMaintenanceToolkit-3.3.3.2-Setup.exe)
 
 **For Windows 10 and Windows 11 — Intel/AMD x64 (64-bit)**
 
-> **Public Beta v3.3.3.1 is now available!** Click **Download Setup EXE** above. For Windows 10 and Windows 11 — Intel/AMD x64 (64-bit).
+> **Public Beta v3.3.3.2 is now available!** Click **Download Setup EXE** above. For Windows 10 and Windows 11 — Intel/AMD x64 (64-bit).
 
 [All downloads and release notes](https://github.com/DeepC-Toolkit/ultimate-windows-maintenance-toolkit/releases) · [Report a problem](https://github.com/DeepC-Toolkit/ultimate-windows-maintenance-toolkit/issues)
 
@@ -65,17 +65,25 @@ Settings, reports and Digital Wellbeing history are stored locally.
 
 Digital Wellbeing records app names and estimated active-use durations. It does not record keystrokes, screenshots, window titles or website addresses.
 
-Windows Update and network diagnostics may contact their respective services when used. If a Toolkit update channel is connected later, its hosting provider can see normal connection information, including your public IP.
+Windows Update and network diagnostics may contact their respective services when used. Toolkit update checks contact GitHub without uploading reports or usage history. GitHub receives normal connection information, including your public IP.
 
 Review reports and screenshots before sharing them.
 
 ## Updates
 
-In-app Toolkit updates are not connected yet.
+From **v3.3.3.2**, Toolkit checks the official GitHub releases on launch and every **6 hours while running**, including public betas. Disable automatic checks in **Toolkit updates** if preferred.
+
+When a newer version is available, choose **Download update**, then **Install update** after verification. New features become available after installation. Updates are not installed silently.
+
+**Already using v3.3.3.1?** Download and install v3.3.3.2 once manually to enable this connected update system. Your saved preferences and reports are retained.
 
 Check the [official Releases page](https://github.com/DeepC-Toolkit/ultimate-windows-maintenance-toolkit/releases) for new versions, changes and known issues.
 
 ## Help and feedback
+
+In v3.3.3.2, open **About → Feedback / report a problem**. Write the problem or suggestion, click **Preview draft**, review it, then **Open GitHub issue**. Sign in to GitHub and click **Submit new issue**. For long drafts, paste the copied text into the issue body. Nothing is posted automatically.
+
+Use **View reports / replies** to open the project's public issue list. The same form accepts download problems and feature requests. No logs or reports are attached automatically.
 
 [Open a bug report](https://github.com/DeepC-Toolkit/ultimate-windows-maintenance-toolkit/issues) and include:
 
@@ -94,3 +102,4 @@ Free for personal, non-commercial use under the included DC proprietary license.
 Third-party components retain their own licenses and notices, included with the release.
 
 © 2026 DC
+
