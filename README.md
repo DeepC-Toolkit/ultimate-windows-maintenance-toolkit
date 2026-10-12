@@ -8,7 +8,7 @@ View your system resources, manage startup apps, and run maintenance tasks from 
 
 **For Windows 10 and Windows 11 — Intel/AMD x64 (64-bit)**
 
-> Public beta preparation: the download link will become available when the release is published.
+> **Public Beta v3.3.3.1 is now available!** Click **Download Setup EXE** above. For Windows 10 and Windows 11 — Intel/AMD x64 (64-bit).
 
 [All downloads and release notes](https://github.com/DeepC-Toolkit/ultimate-windows-maintenance-toolkit/releases) · [Report a problem](https://github.com/DeepC-Toolkit/ultimate-windows-maintenance-toolkit/issues)
 
