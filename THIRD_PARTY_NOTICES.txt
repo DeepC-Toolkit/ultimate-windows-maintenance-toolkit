@@ -1,0 +1,97 @@
+ULTIMATE WINDOWS MAINTENANCE TOOLKIT
+THIRD-PARTY SOFTWARE NOTICES
+
+This release includes or was built using the components below. Each component
+is licensed by its respective copyright holder. The DC Proprietary Software
+License applies only to the original Toolkit materials; it does not change
+the rights granted by these component licenses.
+
+RUNTIME COMPONENTS
+
+CPython 3.12.10
+License: Python Software Foundation License Version 2.0 (PSF-2.0)
+Copyright: Python Software Foundation and Python contributors
+License text: https://docs.python.org/3/license.html
+
+Tcl/Tk 8.6
+License: Tcl/Tk license (BSD-style terms)
+License text: third_party_licenses/Tcl-Tk-license.terms
+Project: https://www.tcl.tk/software/tcltk/license.html
+
+psutil 7.2.2
+License: BSD 3-Clause
+Copyright: Jay Loden, Dave Daeschler, Giampaolo Rodola, and contributors
+License text: third_party_licenses/psutil-LICENSE.txt
+Project: https://github.com/giampaolo/psutil
+
+pystray 0.19.5
+License: GNU Lesser General Public License, version 3 or later (LGPL-3.0-or-later)
+Copyright: Moses Palmér and contributors
+License text: third_party_licenses/pystray-COPYING.LGPL.txt
+Project: https://github.com/moses-palmer/pystray
+GNU GPL v3 text: third_party_licenses/pystray-COPYING.txt
+Source and library replacement: THIRD_PARTY_REPLACEMENT.txt
+This release loads pystray from external Python source files. The unmodified
+upstream source archive is included under third_party_sources/.
+
+Pillow 12.3.0
+License: MIT-CMU
+Copyright: Secret Labs AB, Fredrik Lundh, Jeffrey Clark, and contributors
+License text: third_party_licenses/Pillow-LICENSE.txt
+Project: https://github.com/python-pillow/Pillow
+
+winsdk 1.0.0b10
+License: MIT
+Copyright: Microsoft Corporation; David Lechner, 2021–2022
+License text: third_party_licenses/winsdk-LICENSE.txt
+Project: https://github.com/pywinrt/python-winsdk
+
+BUILD AND SUPPORT COMPONENTS
+
+PyInstaller 6.22.3
+License: GNU GPL, version 2 or later, with the PyInstaller exception for
+applications produced by PyInstaller. The exception permits distribution of
+the generated Toolkit as a proprietary application.
+License text: third_party_licenses/PyInstaller-COPYING.txt
+Project: https://github.com/pyinstaller/pyinstaller
+
+pyinstaller-hooks-contrib 2026.7
+License: See the component license file, which records the applicable notices.
+License text: third_party_licenses/pyinstaller-hooks-contrib-LICENSE.txt
+Project: https://github.com/pyinstaller/pyinstaller-hooks-contrib
+
+altgraph 0.17.5
+License: MIT
+Copyright: Istvan Albert, Bob Ippolito, Ronald Oussoren, and contributors
+License text: third_party_licenses/altgraph-LICENSE.txt
+Project: https://github.com/ronaldoussoren/altgraph
+
+packaging 26.3
+License: Apache License 2.0 or BSD 2-Clause License
+License text: third_party_licenses/packaging-LICENSE.APACHE.txt and
+third_party_licenses/packaging-LICENSE.BSD.txt
+Project: https://github.com/pypa/packaging
+
+pefile 2024.8.26
+License: MIT
+Copyright: Ero Carrera
+License text: third_party_licenses/pefile-LICENSE.txt
+Project: https://github.com/erocarrera/pefile
+
+pywin32-ctypes 0.2.3
+License: BSD 3-Clause
+Copyright: Enthought, Inc. and contributors
+License text: third_party_licenses/pywin32-ctypes-LICENSE.txt
+Project: https://github.com/enthought/pywin32-ctypes
+
+six 1.17.0
+License: MIT
+Copyright: Benjamin Peterson
+License text: third_party_licenses/six-LICENSE.txt
+Project: https://github.com/benjaminp/six
+
+The full package license texts referenced by a file path above are included in
+the release under third_party_licenses/. CPython and Tcl/Tk license links point
+to their authoritative license texts. Build-time components are identified
+separately from runtime components. Windows system components and services
+remain subject to Microsoft's terms.

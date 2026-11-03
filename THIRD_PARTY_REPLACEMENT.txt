@@ -1,0 +1,31 @@
+PYSTRAY LIBRARY: SOURCE, NOTICES AND REPLACEMENT
+
+Toolkit 3.5.0 uses unmodified pystray 0.19.5 for its Windows tray icon.
+Copyright (c) Moses Palmer and contributors. LGPL version 3 or later.
+The original Toolkit application remains under the DC proprietary license.
+
+The LGPL library is loaded at runtime from _internal/pystray/*.py; its code
+is not embedded in the Toolkit PYZ archive. The complete upstream source
+archive is included at _internal/third_party_sources/pystray-0.19.5.tar.gz.
+GNU GPL v3 and LGPL v3 texts are included under _internal/third_party_licenses
+as pystray-COPYING.txt and pystray-COPYING.LGPL.txt.
+
+To use an interface-compatible modified version of pystray:
+1. Exit the Toolkit from its tray menu. Keep a backup of the library folder.
+2. Replace _internal/pystray with the modified pystray package directory.
+   Keep the package name and the Windows backend/API compatible with 0.19.5.
+   This build uses CPython 3.12, Pillow and six. No recompilation of the
+   original Toolkit application is required. An installed Program Files
+   copy may require Windows administrator permission to edit its files.
+3. Remove obsolete library __pycache__ files, if any, and launch the Toolkit.
+   Restore the library backup to return to the official release.
+   A later Toolkit installer can replace these library files again.
+
+The DC license does not restrict modification of the LGPL-covered library
+or reverse engineering of the combined work for debugging such library
+modifications. The third-party license controls these rights. This notice
+does not grant general modification or redistribution rights to original
+Toolkit materials beyond the applicable license or law.
+
+Upstream: https://github.com/moses-palmer/pystray/tree/v0.19.5
+License: https://www.gnu.org/licenses/lgpl-3.0.html

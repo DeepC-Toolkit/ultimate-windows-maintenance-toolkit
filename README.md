@@ -1,105 +1,65 @@
 # Ultimate Windows Maintenance Toolkit
 
-View your system resources, manage startup apps, and run maintenance tasks from one easy-to-use interface.
+**Clear system insights. Careful maintenance.** Built by DC.
 
-**By DC · Version 3.3.3.2**
+View PC resources, manage startup apps, review maintenance actions and keep local reports in one Windows desktop app.
 
-## ⬇ [Download Setup EXE](https://github.com/DeepC-Toolkit/ultimate-windows-maintenance-toolkit/releases/download/v3.3.3.2/UltimateWindowsMaintenanceToolkit-3.3.3.2-Setup.exe)
+**[Download 3.5.0 Setup EXE](https://github.com/DeepC-Toolkit/ultimate-windows-maintenance-toolkit/releases/download/v3.5.0/UltimateWindowsMaintenanceToolkit-3.5.0-Setup.exe)** · [Release notes & checksums](https://github.com/DeepC-Toolkit/ultimate-windows-maintenance-toolkit/releases/tag/v3.5.0) · [Report a problem](https://github.com/DeepC-Toolkit/ultimate-windows-maintenance-toolkit/issues/new/choose)
 
-**For Windows 10 and Windows 11 — Intel/AMD x64 (64-bit)**
+Public Beta · Windows 10 / Windows 11 · Intel/AMD x64 · Free personal, non-commercial use
 
-> **Public Beta v3.3.3.2 is now available!** Click **Download Setup EXE** above. For Windows 10 and Windows 11 — Intel/AMD x64 (64-bit).
+![Toolkit dashboard, light theme, sample readings](docs/images/dashboard.png)
+*3.5.0 interface preview using sample readings. The resource score describes available resources; it is not a security scan.*
 
-[All downloads and release notes](https://github.com/DeepC-Toolkit/ultimate-windows-maintenance-toolkit/releases) · [Report a problem](https://github.com/DeepC-Toolkit/ultimate-windows-maintenance-toolkit/issues)
+## What's new in 3.5.0
 
-## Get started
-
-1. Click **Download Setup EXE** above.
-2. Open the downloaded installer.
-3. Review the Windows administrator permission request and follow the setup instructions.
-4. Launch the Toolkit and follow the welcome guide.
-5. Open **Settings** to choose your theme, startup and notification preferences.
-
-The current installer is unsigned, so Windows may display a security warning.
-
-## Which computers is this build for?
-
-| Windows / processor | This release |
-|---|---|
-| Windows 11 — Intel/AMD, 64-bit | x64 build |
-| Windows 10 — Intel/AMD, 64-bit | x64 build |
-| Windows 10 — 32-bit | Not supported by this build |
-| Windows on ARM64 / Snapdragon | Compatibility not yet verified |
-
-To check your PC, open **Settings → System → About → System type**.
-
-Testing on additional Windows PCs is still in progress.
+- **Readable updates:** installed and available versions are separate; long notes scroll while Download/Install buttons stay visible.
+- **Deep Refresh:** preview more account Temp files older than seven days, then confirm cleanup of that reviewed set.
+- **Responsive navigation:** debounced search and shared background discovery; fixed sidebar without scrolling.
+- **Useful account menu:** click your account card for preferences, reports, Windows account settings, updates and feedback.
+- **Reminder choices:** 5 / 15 / 30 / 45 / 60 minutes, with 30 minutes as the default. Existing notification opt-outs are preserved.
 
 ## What you can do
 
-| Feature | What it helps with |
-|---|---|
-| **Dashboard** | View CPU, RAM and storage information. |
-| **Startup Manager** | Review and manage apps that open when you sign in. |
-| **App controls** | Add an EXE path, pause/resume supported running apps, and choose CPU/GPU preferences. |
-| **Optional services** | Review detected third-party services and manually control supported services. |
-| **Maintenance tools** | Review cleanup actions and use Windows diagnostic and repair tools. |
-| **Digital Wellbeing** | View estimated foreground app usage. |
-| **Local reports** | Review results saved on your PC. |
+| Area | Purpose |
+| --- | --- |
+| Dashboard | CPU, RAM, supported GPU readings and drive usage |
+| Quick Refresh | User-requested system RAM cleanup, followed by old account Temp cleanup |
+| Deep Refresh | Bounded preview and cleanup of old account Temp files; keeps open apps running |
+| Startup & app controls | Startup registrations, supported app pause/resume and CPU/GPU preferences |
+| Maintenance | Review cleanup, diagnostics, Windows repair and update actions |
+| Digital Wellbeing | Optional local foreground app names and usage durations |
+| Reports | Review results stored on your PC |
 
-Read each action's explanation before running it. Some actions require administrator permission.
+Quick Refresh can briefly pause apps as Windows reloads memory pages. Lower RAM use does not guarantee better performance. Deep Refresh is a storage cleanup, and does not close apps, clear Windows Prefetch or promise a speed increase. Service discovery is not malware detection.
 
-Optional-service discovery provides information for review; it does not determine whether software is malicious. Performance preferences do not guarantee a speed improvement.
+## Install or upgrade
 
-## Settings you control
+1. Download the **Setup.exe** from the release above. The repository's “Source code” ZIP is not the installer.
+2. Finish current maintenance, then choose **Exit** from the Toolkit tray menu. If only the tracker remains, use **Pause Toolkit for update** from Start.
+3. Open Setup, review Windows' permission request and choose the installation folder. Existing settings/history are kept when upgrading the same installation.
+4. Launch Toolkit. **About → Toolkit updates** shows the installed version and checks for new releases.
 
-- **Start with Windows:** Enabled for fresh installations and changeable in Settings.
-- **Digital Wellbeing:** Enabled on first normal launch for new users and can be disabled.
-- **High-load reminders:** Appear only after two minutes of very high CPU or RAM use. The default repeat interval is at least 43 minutes.
-- **Appearance:** Choose a light or dark theme.
-- Existing saved preferences are preserved during upgrades.
+The installer is currently unsigned; Windows/Edge may show an unknown-publisher or download-reputation warning. A checksum verifies file consistency, not code-signing identity. Additional PC and display-scale testing is ongoing. ARM64/Snapdragon is not verified; 32-bit Windows is not supported.
 
-## Privacy
+## Updates and feedback
 
-Settings, reports and Digital Wellbeing history are stored locally.
+With automatic checking enabled, Toolkit checks official GitHub releases on launch and every six hours while running, including public betas. You choose when to download and install. Editing this README does not update an installed app.
 
-Digital Wellbeing records app names and estimated active-use durations. It does not record keystrokes, screenshots, window titles or website addresses.
+**About → Feedback / report a problem** creates a draft for review, then opens GitHub Issues. A GitHub account is needed to submit. Nothing is posted automatically. Issues and replies are public; remove private information before submitting. See [support](SUPPORT.md).
 
-Windows Update and network diagnostics may contact their respective services when used. Toolkit update checks contact GitHub without uploading reports or usage history. GitHub receives normal connection information, including your public IP.
+## Privacy and choices
 
-Review reports and screenshots before sharing them.
+Settings, reports and optional Digital Wellbeing history stay locally. Digital Wellbeing records app names and durations, not keystrokes, screenshots, window titles or website addresses. Fresh installs enable startup and Digital Wellbeing; both can be changed, and saved opt-outs survive upgrades. High-load reminders require two minutes of sustained very high CPU/RAM before the selected repeat interval applies.
 
-## Updates
+Update checks contact GitHub; requested diagnostics and Windows Update may contact their services. No reports or usage history are uploaded by Toolkit update checks. Hosting services can see ordinary connection information, such as the public IP. [Privacy details](docs/PRIVACY.md).
 
-From **v3.3.3.2**, Toolkit checks the official GitHub releases on launch and every **6 hours while running**, including public betas. Disable automatic checks in **Toolkit updates** if preferred.
+## License and project contents
 
-When a newer version is available, choose **Download update**, then **Install update** after verification. New features become available after installation. Updates are not installed silently.
+Original Toolkit materials use the [DC Proprietary Software License](LICENSE). This repository provides official releases, documentation and support. The original application's source is private.
 
-**Already using v3.3.3.1?** Download and install v3.3.3.2 once manually to enable this connected update system. Your saved preferences and reports are retained.
+Third-party components retain their own rights and licenses. See [notices](THIRD_PARTY_NOTICES.txt), [license texts](third_party_licenses/) and [pystray source/replacement information](THIRD_PARTY_REPLACEMENT.txt). This repository includes that library's required source material, not the proprietary Toolkit source.
 
-Check the [official Releases page](https://github.com/DeepC-Toolkit/ultimate-windows-maintenance-toolkit/releases) for new versions, changes and known issues.
-
-## Help and feedback
-
-In v3.3.3.2, open **About → Feedback / report a problem**. Write the problem or suggestion, click **Preview draft**, review it, then **Open GitHub issue**. Sign in to GitHub and click **Submit new issue**. For long drafts, paste the copied text into the issue body. Nothing is posted automatically.
-
-Use **View reports / replies** to open the project's public issue list. The same form accepts download problems and feature requests. No logs or reports are attached automatically.
-
-[Open a bug report](https://github.com/DeepC-Toolkit/ultimate-windows-maintenance-toolkit/issues) and include:
-
-- Toolkit version
-- Windows version and system type
-- What you were doing
-- What happened
-- A screenshot, if useful
-
-GitHub issues are public. Remove passwords, verification codes, keys and personal details before posting.
-
-## License
-
-Free for personal, non-commercial use under the included DC proprietary license.
-
-Third-party components retain their own licenses and notices, included with the release.
+[User guide](docs/USER_GUIDE.txt) · [Changelog](CHANGELOG.md) · [All releases](https://github.com/DeepC-Toolkit/ultimate-windows-maintenance-toolkit/releases)
 
 © 2026 DC
-

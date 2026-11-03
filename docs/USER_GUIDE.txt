@@ -1,0 +1,254 @@
+ULTIMATE WINDOWS MAINTENANCE TOOLKIT 3.5.0
+Release candidate - DC
+
+QUICK MANUAL
+Read QUICK_START.txt for the 10-step tool guide, also available from Dashboard
+and the How to use sidebar page, which also offers Replay welcome tour.
+Digital Wellbeing shows today's foreground app time using a small local collector.
+Closing the window keeps it in the tray. Tray Exit stops the tracker too.
+Daily history stays saved locally; each local midnight starts a new day.
+Health is a live resource-headroom score; it is not a Windows/security diagnosis.
+Fresh installs enable sustained-load reminders, repeating at most every 30 minutes.
+Choices are 5, 15, 30, 45 and 60 minutes. Earlier intervals 4/14/28/59 become 5/15/30/60 minutes; the old 43-minute
+default becomes 30 minutes. Notification opt-outs remain unchanged.
+Feedback drafts can be previewed and saved locally; nothing is sent automatically.
+
+INSTALL
+Open UltimateWindowsMaintenanceToolkit-3.5.0-Setup.exe.
+The default destination is Program Files\Ultimate Windows Maintenance Toolkit
+on the Windows system drive (usually C:). Use Browse to select another folder.
+Windows requests administrator permission to install there.
+An installer ZIP must be extracted first; then run Setup.exe inside it.
+Open the Toolkit from the Start menu after installation.
+
+PORTABLE EDITION
+Extract the whole portable ZIP to a writable folder, then open
+UltimateWindowsMaintenanceToolkit.exe. Keep all accompanying files together.
+Extracting the portable ZIP does not install it into Program Files.
+
+FIRST USE
+Use the welcome tour or Skip it; replay it from How to use.
+After each completed Setup, the first visible launch requests a Windows
+administrator permission check, then shows the tour again. Reinstalling keeps
+history and settings but renews this first-launch experience. Cancelling the
+permission check keeps the ordinary app usable. Later protected actions can
+still require UAC; this check does not grant permanent administrator rights.
+The portable edition does not have an installation permission check.
+Digital Wellbeing starts by default on the first normal Toolkit launch, then
+at Windows sign-in. Downloading alone does not start it. You can disable it
+or clear saved history on its page. An existing disabled preference is kept
+on upgrade. Time before the collector started cannot be recovered.
+Start with System Scan. It reads local system information.
+Review cleanup paths before confirming. Close apps that use those caches.
+Locked, inaccessible, linked and redirected entries may be skipped.
+Disk Cleanup targets temporary files and DirectX shader cache.
+Windows Update cache and Prefetch are not included in Disk Cleanup.
+Repair Windows offers verification first. Approved repairs use Windows DISM
+and SFC, require administrator access and a successfully created restore point.
+Repair does not reset Windows or target documents, but a restore point is
+not a backup of personal files.
+
+BACKGROUND MODE
+Closing the window minimizes to the tray by default.
+With background economy enabled (Settings > General), tray readings refresh
+about every 3 seconds and the hidden page is released after 30 seconds of idle.
+Open the tray icon to restore the page. Tray Exit stops both the GUI and the
+Digital Wellbeing collector, keeping its enabled/disabled preference.
+Enabled tracking resumes at the next Toolkit launch or Windows sign-in.
+The main GUI startup switch is independent of the collector. Windows must
+allow the collector's own startup entry; disabling it in Windows prevents
+sign-in tracking. No usage can be recorded while the PC is shut down.
+Wait for any active maintenance task to finish before Exit.
+Fresh installations enable Start with Windows after the first normal installed
+launch. Change it in Settings > General. Saved startup choices survive upgrades
+and reinstalls. High-load reminders default to 30 minutes for fresh preferences;
+existing notification choices are kept. Windows Do not disturb can hide them.
+
+QUICK REFRESH
+Choose Quick Refresh on the Dashboard or right-click the tray RAM percentage
+and choose Quick Refresh. Allow the Windows permission prompt. A small progress
+window opens and a short result appears when finished; Details is optional.
+System RAM clean asks Windows to trim process working sets, flush the system
+file cache, and reclaim low-priority standby memory. A short-lived elevated
+helper performs only these fixed operations, then exits. Each operation's
+success, permission failure or unsupported result is shown in Details.
+This is system-wide: open apps, games, OBS and servers can be affected too.
+No apps are closed, but they may briefly pause while their memory reloads.
+The GUI remains responsive; wait for Windows to finish before another action.
+Cancelling permission cancels this refresh, including the Temp cleanup.
+It also deletes eligible files older than 7 days from %LOCALAPPDATA%\Temp.
+Recent, locked, read-only, linked and redirected files are kept. Downloads,
+Documents, browser profiles, Windows files and other accounts are not targets.
+Folders stay in place. Work is bounded to 5,000 entries, six nested levels
+and an eight-second traversal budget; a partial scan is labelled in the result.
+The reported Temp size is deleted file data, not a promise of physical free
+space. This is the same Temp cleanup on HDD, SSD and NVMe; it is not defrag.
+RAM and CPU before/after are measured. Details adds one further reading about
+20 seconds after the result while Toolkit remains open. Other work affects
+the readings and memory can refill. CPU use or streaming speed may not improve.
+The RAM figures do not measure how much standby cache was cleared. There is no
+fixed RAM-reduction target, app termination or automatic repeated cleanup.
+Wait 60 seconds between refreshes. Advanced app details remains optional.
+The tray number is total system RAM percent. Hover or open its menu for CPU,
+RAM and GPU readings. Quick Refresh updates the RAM/CPU result immediately.
+GPU uses persistent Windows engine counters; unsupported/blocked readings
+are explained, never replaced with an invented percentage.
+Tray > Tools opens the existing maintenance, wellbeing and report pages.
+The system RAM helper stores no reports or app lists and uses no network.
+It does not record audio, read document contents or change startup settings.
+
+YOUR DATA
+Preferences and reports are saved under:
+%LOCALAPPDATA%\UltimateWindowsMaintenance
+No account or automatic telemetry is used. Network diagnostics and Windows
+Update checks can contact external services when selected. Optional Toolkit
+update checks contact the official GitHub API/releases without uploading reports
+or usage data. GitHub receives ordinary request information, including public IP.
+Checks run on launch and every six hours while Toolkit is running, including
+in the tray. Disable automatic checks in the Toolkit updates window.
+The public beta channel includes published prereleases. Offline or rate-limited
+checks are shown as errors, never as proof that the app is up to date.
+New releases are announced once per version per session when the app is visible;
+tray discoveries are shown when you reopen the window. Choose Download update,
+then Install update after size/SHA-256 verification. New features appear after
+installation. Older unconnected builds such as 3.3.3.1 must be upgraded manually.
+
+FEEDBACK / DOWNLOAD HELP
+About > Feedback / report a problem accepts bugs, download issues and ideas.
+Preview draft and review the redacted text, then Open GitHub issue. Short drafts
+are prefilled; long drafts are copied for you to paste. GitHub sign-in is needed.
+Only clicking Submit new issue on GitHub publishes it. Issues/replies are public.
+No logs or device identifiers are attached automatically. Copy draft and Save
+reviewed draft work locally; View reports / replies opens the official Issues.
+https://github.com/DeepC-Toolkit/ultimate-windows-maintenance-toolkit/issues
+Review diagnostic reports before sharing them.
+
+UPGRADE
+On 2.1.4 or newer, choose Exit from the Toolkit tray menu.
+When upgrading FROM 2.1.2/2.1.3, also choose Pause Toolkit for update from
+Start and wait six seconds. This retains the tracking preference.
+On earlier versions disable Digital Wellbeing first and enable it again
+after upgrading if desired.
+Run the new Setup normally and approve Windows' installation prompt. Setup
+uses the existing install folder and retains AppData reports/preferences.
+
+UNINSTALL
+Finish maintenance, then choose Exit from the Toolkit tray menu. This stops
+both the GUI and collector; no separate End task is needed. Then use Windows
+Settings > Apps > Installed apps > Toolkit > Uninstall.
+If only the collector is running, open Toolkit and choose tray > Exit, or
+use Pause Toolkit for update from Start. Other signed-in users must also
+exit their own Toolkit before removing shared program files.
+Uninstall removes this installation's matching startup entries in accessible,
+loaded Windows profiles. For offline/unloaded profiles, each account owner
+should disable its Toolkit startup entries before removal.
+Reports, preferences and saved daily usage are kept in each account's AppData.
+
+RELEASE STATUS
+This candidate still requires clean-PC installation/uninstallation and
+maintenance verification before a public stable release.
+The candidate is unsigned unless the publisher adds a verified signature.
+License and third-party notices are included with the distribution.
+
+DAILY USAGE AND RESOURCE READINGS
+Digital Wellbeing > Date: choose Today, a saved date, or use Calendar for older days.
+The seven-day chart and app ring show recorded time. Historical data from older
+versions cannot be recovered if it was never retained. Clear saved history
+asks before deleting this account's usage; it keeps maintenance reports.
+PC configuration shows physically installed RAM when Windows permits it.
+The live RAM bar uses usable memory, which can be lower due to hardware reserves.
+Storage shows used, free and total mounted local-volume capacity.
+Quick Refresh yields during Temp traversal and its elevated helper uses lower
+scheduling priority. It does not erase live process/thread/handle counts,
+committed memory, kernel pools or GPU allocations. Windows owns those resources.
+Cached RAM is reusable and can refill; zero cache is not a performance target.
+The final result is observed system usage, not a guaranteed streaming improvement.
+
+FEATURES FROM 3.2.1
+Startup Manager: use each app's On/Off switch. Desktop Run entries, startup
+shortcuts and current-account Store/MSIX startup tasks are included. Managed
+or unknown formats are protected. If Windows denies discovery, the list says
+it is incomplete. All-user entries require Administrator controls. Add an app
+/ EXE lists Windows' app catalog and offers Paste path / Browse for a local
+EXE, including software outside the Start menu. Adding enables startup for your
+account. Service startup and app-managed scheduled tasks are separate.
+
+App controls: search installed, running and saved apps. Add EXE path accepts
+a full local executable path, with or without surrounding quotes, but without
+command arguments. It saves the entry locally and does not launch it.
+Switch a running app off to Pause; switch it on to Resume. A not-running app's
+switch asks before opening it. Launch apps from a normal Toolkit window, not
+an Administrator window. Unknown Store executable paths can be opened, but
+need an EXE path before CPU/GPU controls become available.
+Pause keeps its data
+in memory and stops its current processes from doing work; RAM may stay allocated.
+Audio, notifications, downloads and uploads can pause too. Toolkit resumes its
+pauses after 15 minutes or on exit. A separate controller restores pauses and
+CPU priority when the main window process ends unexpectedly. Do not end that
+controller while apps are paused. Windows/security processes are protected.
+Controls > Save CPU stores Lower / Normal / Higher for a launch from Toolkit
+and applies it now if the app is running. Launching elsewhere does not apply
+that saved CPU choice. Restore session returns original priority and resumes
+the selected app. GPU preference can be saved for a stopped app too; restart
+the app to apply it. Preferences belong to your Windows account.
+Windows, drivers and available GPUs determine the result. No forced 100% usage.
+
+Optional services shows recognized installed VPN, game and remote-support
+services. Use its On/Off switch to Start/Stop, or Save startup to change its
+startup mode. Each change names its target and requires confirmation and UAC.
+Opening this page changes nothing. Existing stopped services stay stopped.
+Starting a disabled service first changes its startup mode to Manual.
+Stop does not change startup mode; Disable startup does
+not stop an already running service. VPN or remote-support sessions can disconnect.
+
+Network Tools: Clear DNS cache, Renew IP address, or Reset network. The tray
+also offers Reset network. Review the impact and allow UAC before a change.
+Reset runs Winsock/TCP-IP reset and DNS flush; restart manually afterward.
+Custom IP/DNS or VPN configuration may need to be restored. No auto-restart.
+
+Timing labels learn only from successful tasks on this PC; failed runs are
+excluded and previews are measured separately. The last time is shown after
+one success, then a median of the last eight successful runs. No duration is
+claimed before a successful measurement.
+Saved reports is now under System Tools in a compact table. Existing history
+is kept. Digital Wellbeing has a calendar, a smoother ring, a lower daily chart
+and an Open all apps list with visible scrolling.
+All new preferences and timing samples stay local; no app list is uploaded.
+
+NEW IN 3.3.3.1
+Startup and app lists show 20 entries per page. Recent discovery results are
+reused in memory for up to one minute; Refresh requests current information.
+Optional services automatically discovers third-party service EXEs outside
+Windows when Toolkit starts and when you refresh the page. Supported products
+have confirmed On/Off controls. Other services offer Details and a link to
+Windows Services for review. No service is changed during discovery.
+RAM is a current process reading, when accessible. EXE size is not total disk
+usage. Discovery cannot establish whether software is malicious, illegal,
+tracking you or leaking traffic. Use Windows Security for a malware scan.
+
+SHORT PRIVACY / USE SUMMARY
+No accounts, cloud history or automatic report uploads. Settings and optional
+usage history stay under this Windows account. No passwords, private keys,
+keystrokes, screenshots or document contents are collected. Windows account
+permissions protect local files; administrators can still access local data.
+Diagnostics can include local paths and network addresses: review before sharing.
+Confirm changes only after reviewing their description. Back up important files.
+Requested network checks and configured update checks use network connections.
+Read LICENSE for the full terms. This utility is not an antivirus or a backup.
+
+ACCOUNT SHORTCUTS
+Click your account card at the bottom left, or focus it with Tab and press
+Enter or Space. Open Toolkit settings, your reports/data folder, Windows
+account settings, Toolkit updates, feedback or the user guide.
+All sidebar destinations stay visible without a sidebar scrollbar.
+
+NEW IN 3.5.0
+Toolkit updates: installed version and available version are separate. Scroll
+the release details; Download and Install buttons stay at the bottom.
+Deep Refresh: Dashboard > Deep Refresh > Scan / preview. Review the estimate,
+then choose Clean reviewed files. Only reviewed Temp files older than seven
+days are eligible; recent, changed, protected or locked files are kept.
+The deeper scan is bounded to 25,000 entries / 30 seconds and can be stopped.
+Quick Refresh remains a separate system RAM and short Temp cleanup action.
+Search waits briefly while you type; startup/app discovery is prefetched on
+navigation hover/focus. This does not change Windows Prefetch or services.
