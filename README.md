@@ -50,3 +50,60 @@ This installer is unsigned, so Windows or a browser may show an unknown-publishe
 ![Ultimate Windows Maintenance Toolkit 3.5.0 dashboard preview in the light theme](docs/images/dashboard.png)
 
 *Historical 3.5.0 light-theme preview with sample readings.*
+
+What you can do
+Feature	How it helps
+Dashboard	View live CPU and RAM readings, supported GPU readings, drive usage, and other system information.
+Digital Wellbeing	Optionally review app names and usage durations saved locally on your PC.
+Quick Refresh	Request a brief memory refresh, followed by a bounded cleanup of eligible old temporary files for your Windows account.
+Deep Refresh	Preview eligible old temporary files and review the results before confirming cleanup.
+Startup Manager	Review and manage supported startup entries. Startup preferences are user-controlled.
+App controls	Review supported app controls and CPU/GPU preferences.
+Maintenance tools	Review Windows diagnostic, repair, update, and cleanup actions before running them. Some actions require administrator permission.
+Gaming Mode	Optionally adjust the priority of selected, already-running applications and restore their previous priorities when switched off normally.
+Local reports	Review maintenance results saved on your PC.
+
+
+Review each maintenance action before running it. Keep independent backups of important files. A lower RAM reading does not necessarily mean better performance, and no maintenance feature guarantees a speed increase.
+Understand Quick Refresh and Deep RefreshQuick Refresh
+Quick Refresh requests a short-lived Windows helper to refresh memory, then checks a bounded set of eligible temporary files for your Windows account. Windows may show a permission prompt for the helper.
+- It does not close your applications. Windows may briefly pause or reload memory pages.
+- Cleanup is limited to eligible old files in your account’s temporary folder. Recent, locked, or otherwise skipped files are left in place.
+- It does not clean Downloads, Documents, browser profiles, Windows system files, or other users’ folders.
+- Results report what the cleanup actually handled. A skipped item is not treated as deleted.
+- The amount of temporary data removed is not a promise of the same amount of extra physical disk space or a guaranteed performance improvement.
+The result is shown as a compact, non-blocking notification. Optional details and recent task notifications are available in the Toolkit.
+Deep Refresh
+Deep Refresh previews a bounded set of eligible temporary files older than seven days for your Windows account. Review the list before confirming cleanup. It does not close apps or clear Windows Prefetch.
+
+Digital Wellbeing
+Digital Wellbeing is optional and stays on your PC. Enable tracking when you want it to start recording. Daily totals are split at midnight; the feature does not recreate usage from before tracking was enabled. Locked, sleeping, and idle periods are excluded from active usage.
+
+The history records application names and usage durations. It does not record keystrokes, screenshots, window titles, or website addresses. Review or clear your local history in the Toolkit.
+Gaming Mode
+Gaming Mode is optional and user-controlled. Select a trusted application that is already running, then turn the mode on when you are ready.
+- It can raise a matching process from Normal to Above normal priority.
+- You launch the game or application yourself. Toolkit does not automatically launch an arbitrary EXE.
+- It does not overclock the GPU, alter security settings, kill other processes, or promise higher FPS.
+- Toolkit records the prior priority locally so it can normally restore it when Gaming Mode is turned off.
+- Gaming Mode starts off when Toolkit is launched. If Toolkit or Windows closes unexpectedly during a session, follow the recovery guidance in the user guide before removing local recovery data.
+Priority changes may not improve a particular game or PC. Check that the selected application is the one you intend to adjust.
+New in 2.5.2
+- Clearer daily accounting for optional, local Digital Wellbeing tracking.
+- Quieter, non-blocking Quick Refresh and task-completion notifications.
+- More informative cleanup and restore-point results, including skipped items and reported failures.
+- Feedback preview before opening an email draft or a GitHub issue.
+- Optional Gaming Mode for selected, already-running applications.
+- A new 2.5.x version sequence; upgrades from 3.5.1 require manual installation.
+
+
+
+Help and feedback
+For a problem or feature suggestion, include:
+- Toolkit version and Windows version
+- What you expected to happen
+- What actually happened
+- The steps needed to reproduce the problem, if known
+Use GitHub Issues for public reports. Issues and replies can be visible to others, so remove passwords, recovery codes, personal files, email addresses, and other private information from screenshots and descriptions before posting.
+
+You can also contact support at uwtsupport.official@gmail.com. The Toolkit prepares a draft for you to review; it does not send feedback automatically. You decide whether to open the draft and send it.
