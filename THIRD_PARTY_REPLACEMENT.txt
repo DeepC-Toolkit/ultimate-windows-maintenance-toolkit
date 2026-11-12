@@ -1,6 +1,6 @@
 PYSTRAY LIBRARY: SOURCE, NOTICES AND REPLACEMENT
 
-Toolkit 3.5.0 uses unmodified pystray 0.19.5 for its Windows tray icon.
+Toolkit 2.5.2 uses unmodified pystray 0.19.5 for its Windows tray icon.
 Copyright (c) Moses Palmer and contributors. LGPL version 3 or later.
 The original Toolkit application remains under the DC proprietary license.
 
